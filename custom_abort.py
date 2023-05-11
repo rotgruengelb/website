@@ -1,5 +1,6 @@
 from flask import render_template
 
+
 def abort(code):
     if code != None:
         return render_template(f'errors/{code}.html'), int(code)

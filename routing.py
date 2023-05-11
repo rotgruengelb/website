@@ -2,6 +2,7 @@ import tomllib
 from flask import redirect, send_file, abort
 import custom_abort
 
+
 def nav_entry(app, website_dir):
     @app.route("/<path:continent>/")
     @app.route("/<path:continent>/<path:street>")
