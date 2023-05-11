@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(28, 27, 34);
+  color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 1;
+}
+
+.wrapper {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8%;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 2;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
