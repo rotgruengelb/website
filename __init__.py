@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import routing
-import special_sites as specials#
+import special_sites as specials
 
 
 app = Flask(__name__)
