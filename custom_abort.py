@@ -1,8 +1,7 @@
 from flask import render_template
 
-
-def abort(code):
-    if code != None:
-        return render_template(f'errors/{code}.html'), int(code)
+def custom_abort(status_code):
+    if status_code is not None:
+        return render_template(f"errors/{status_code}.html"), int(status_code)
     else:
-        return render_template(f'errors/404.html'),404
+        return render_template("errors/404.html"), 404
