@@ -24,7 +24,7 @@ def grab_map(website_dir):
 
 def understand_map(map_, destination):
     continent = destination[0]
-    if street != None: street = destination[1]
+    if destination[1] != None: street = destination[1] 
     else: street = "cd"
     return map_.get(continent, {}).get(street)
 
