@@ -3,12 +3,13 @@ from routing import nav_entry
 from special_sites import errors, bots
 import os
 
+
 app = Flask(__name__)
 
 # Get the path to the website directory
 website_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Register routes and error pages
+# Register dynamic routing and error pages
 nav_entry(app, website_dir)
 errors(app)
 bots(app, website_dir)
